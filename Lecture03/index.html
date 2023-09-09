@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        never open an internal link in other tab until and unless you don't want to open a pdf i.e don't use targert_blank for internal links
+         -->
+    <a href="https://www.google.com/ target"=blank">Google</a>
+    <br>
+    <a href="/Lecture02/second.html">Lecture02 abs</a>
+    <br>
+    <a href="../Lecture02/second.html">Lecture02 relative</a>
+    <br>
+    <img src="https://images.unsplash.com/photo-1694166055022-67ac18163546?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Text for when image isn't available">
+
+    <img src="/Static/Assets/Images/Lec03img.avif" alt="">
+
+    <!-- there are two types of elements block and inline; block elements require complete block to accumlate itself no matter whats the length eg: <p></p>
+    where as inline elements doesn't require complete line they can adjust one after other eg:<a  ></a>;<img   > -->
+    <hr>
+    <h3>Block vs Inline</h3>
+    <hr>
+<!--   block level -->
+ <p>Lorem, ipsum dolor.</p>
+ <p>Lorem ipsum dolor sit amet.</p>
+ <hr>
+ <!-- inline level -->
+<a href="">Google</a>
+<a href="">Insta</a>
+<p>lorem</p>
+    <!-- this p will go n next line as it needs full space  -->
+
+    <hr>
+    <h3>lists</h3>
+    <hr>
+    <!-- unordered lists -->
+    <ul>
+        <li>Kareena</li>
+        <li>Drushti</li>
+        <li>Drishti</li>
+        <li>Deepa</li>
+    </ul>
+    <hr>
+    <!-- ordered lists -->
+    <ol>
+        <li>Kareena</li>
+        <li>Drushti</li>
+        <li>Drishti</li>
+        <li>Deepa</li>
+    </ol>
+    <hr>
+    <!-- there is a type artibute in ordered lists eg:A,a,I,i....-->
+    <ol type="A">
+
+        <li>Kareena</li>
+        <li>Drushti</li>
+        <li>Drishti</li>
+        <li>Deepa</li>
+    </ol>
+    <hr>
+    <h3>Description Lists</h3>
+    <hr>
+    <dl>
+        <!-- 
+             dt= data term
+             dd = data defination
+        -->
+        <dt>Word 1</dt>
+        <dd>Lorem ipsum dolor sit amet.</dd>
+
+        <dt> Word 2</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita?</dd>
+    </dl>
+    <hr>
+    <!-- 
+        Tables
+        thead -> table head
+        tbody -> table body
+        tr -> table row
+        th -> table headercell
+        td -> table datacell
+
+    -->
+    <h3>Tables</h3>
+    <hr>
+    <table border="2">
+        <thaed>
+            <tr>
+                <th>Name</th>
+                <th>P/Ab</th>
+            </tr>
+        </thaed>
+        <tbody>
+            <tr>
+                <td>Kareena</td>
+                <td>P</td>
+            </tr>
+            <tr>
+                <td>Deepa</td>
+                <td>P</td>
+            </tr>
+            <tr>
+                <td>Drushti</td>
+                <td>Ab</td>
+            </tr>
+            <tr>
+                <td>Drishti</td>
+                <td>P</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- <table border = "2" ></table> it gives border to the table but we donot use this this is not the work of html it is done systematically in CSS -->
+
+    <ul>
+        <li>Maths</li>
+        <li>Java</li>
+        <li>DS</li>
+        <li>Web devlopment
+            <!-- Nested list i.e list inside a list -->
+            <ol> 
+                <li>Front end
+                    <ol type="i">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ol>
+                </li>
+                <li>Back end</li>
+            </ol>
+        </li>
+    </ul>
+</body>
+</html>
