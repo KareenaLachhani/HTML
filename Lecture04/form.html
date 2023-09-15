@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Signup Form </legend>
+        <form>
+            <!-- Method 1 using for and id -->
+            <div>
+             <label for="name">Enter First Name : </label>
+              <input placeholder="Enter First Name" text" id="name">
+              <!-- placeholder just writes at back that is overrided -->
+            </div>  
+            <div>
+                <label for="score">Enter Score : </label>
+                 <input placeholder="Enter Score" type="number" id="score">
+            </div> 
+            <div>
+                <label for="email">Enter email : </label>
+                 <input placeholder="Enter your email" type="email" id="email">
+            </div> 
+            <div>
+                <label for="password">Enter password : </label>
+                 <input type="password" id="password" value="pwd">
+                 <!-- we can either use placeholder or value attribute -->
+            </div>
+            <div>
+                <button type ="submit">Submit </button>  
+                <button type ="button"> Simple button</button>
+                <button type ="reset">Reset button</button>
+            </div>
+            <div>
+                <input type="radio" name="gender" id="Male" value="m">
+                <!-- value attribute sends the value -->
+                <label for="Male">Male</label>
+                <input type="radio" name="gender" id="Female" value="f">
+                <label for="Female">Female</label>
+    
+                <input type="radio" name="gender" id="Op1">
+                <label for="Op1">Option 01</label>
+                <input type="radio" name="gender" id="Op2">
+                <label for="Op2">Option 02</label>
+    
+    
+            </div>
+            <input type="checkbox" name="gender" id="Opt1">
+                <label for="Opt1">Option 01</label>
+                <input type="checkbox" name="gender" id="Opt2">
+                <label for="Opt2">Option 02</label>
+                <input type="checkbox" name="gender" id="Opt3">
+                <label for="Opt3">Option 03</label>
+                
+            <div>
+                <!-- Method 2 using input inside the label tag -->
+                <label> Test Label : 
+                    <input type="text">
+                </label>
+            <div>
+                <input type="date">
+                <input type="file">
+                <input type="color">
+         <input type="hidden" value="10" name="hiddenvalue"> 
+               <!-- hidden value hides the value from the screen so that it is not visible to the user it sends the value  -->
+            </div>    
+            
+            <div>
+                <label for="dropdown">Choose one :</label>
+                <select name="optionkey" id="dropdown">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                </select>
+            </div>
+        </form>
+    </fieldset>
+    
+</body>
+<!-- Uses of name attribute :
+      1. Helps in grouping 
+      2. Helps in acessing -->
+      <!-- Id is used for tragetting -->
+</html>
+
+<!-- Object = {
+    "fname" : "Priya",
+    "lname": "Karsi",
+    "score": 50,
+    "gender" : "female",
+    "pwd": "text",
+    "opt" : [1,2],
+    "hiddenvalue" : 10,
+    "optionkey" : 3, 
+} -->
+
+<!-- radio -> selects only one option , we cannot uncheck
+     checkbox -> selects multiple options also one can uncheck -->
